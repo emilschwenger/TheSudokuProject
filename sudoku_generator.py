@@ -116,6 +116,7 @@ def recursive_field_generator(board=None, current_x=0, current_y=0, break_value=
                     LAST_SUDOKU = json.loads(json.dumps(board))  # deep copy of the board
                     # Write the last board to a file named after the thread
                     write_last_checkpoint(f"{thread_name}_checkpoint.json", LAST_SUDOKU)
+                    # TODO: Write the solution into a database
             else:
                 # Move to the next row
                 recursive_field_generator(board, current_x + 1, 0, break_value, thread_name)

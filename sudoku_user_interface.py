@@ -1,5 +1,6 @@
 import tkinter as tk
 
+
 def create_sudoku_gui(grid):
     root = tk.Tk()
     root.title("Sudoku")
@@ -12,7 +13,10 @@ def create_sudoku_gui(grid):
 
     root.mainloop()
 
-# Example Sudoku grid (0 represents empty cells)
-sudoku_grid = [[7, 1, 2, 3, 4, 5, 6, 8, 9], [3, 4, 5, 6, 8, 9, 1, 2, 7], [6, 8, 9, 1, 2, 7, 3, 4, 5], [1, 2, 3, 4, 5, 6, 7, 9, 8], [4, 7, 6, 8, 9, 3, 5, 1, 2], [5, 9, 8, 2, 7, 1, 4, 6, 3], [2, 5, 7, 9, 1, 4, 8, 3, 6], [9, 6, 4, 5, 3, 8, 2, 7, 1], [8, 3, 1, 7, 6, 2, 9, 5, 4]]
+
+# Example Sudoku grid
+sudoku_grid = [[1, 2, 3, 4, 5, 6, 7, 8, 9], [4, 5, 6, 7, 8, 9, 1, 2, 3], [7, 8, 9, 1, 2, 3, 4, 5, 6],
+               [2, 1, 4, 3, 6, 5, 8, 9, 7], [3, 6, 5, 8, 9, 7, 2, 1, 4], [8, 9, 7, 2, 1, 4, 3, 6, 5],
+               [5, 7, 8, 9, 4, 1, 6, 3, 2], [6, 4, 1, 5, 3, 2, 9, 7, 8], [9, 3, 2, 6, 7, 8, 5, 4, 1]]
 
 create_sudoku_gui(sudoku_grid)
